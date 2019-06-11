@@ -1,1 +1,85 @@
-salut
+<!--HTML for the game Des Chiffres et des Lettres -->
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="./css/main.css" rel="stylesheet" media="all" type="text/css">
+    <title> Les Chiffres et les Lettres </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="title col-12 col-md-12 col-lg-12">
+                    <h1>Des Chiffres et des Lettres</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="regle col-12 col-md-12 col-lg-12" id="regle">
+                    <p>
+                        Texte
+                    </p>
+                    <table>
+                        <tr class="ligneDeLettres">
+                            <td><span id="case.C1" class="lettre case.C1"></span></td>
+                            <td><span id="case.C2" class="lettre case.C2"></span></td>
+                            <td><span id="case.C3" class="lettre case.C3"></span></td>
+                            <td><span id="case.C4" class="lettre case.C4"></span></td>
+                            <td><span id="case.C5" class="lettre case.C5"></span></td>
+                            <td><span id="case.C6" class="lettre case.C6"></span></td>
+                            <td><span id="case.C7" class="lettre case.C7"></span></td>
+                            <td><span id="case.C8" class="lettre case.C8"></span></td>
+                            <td><span id="case.C9" class="lettre case.C9"></span></td>
+                            <td><span id="case.C10" class="lettre case.C10"></span></td>
+                        </tr>
+                    </table>
+
+
+                    <div>
+                        <button class="consonne" id="consonne">Consonne</button>
+                        <button class="voyelle" id="voyelle">Voyelle</button>
+                        <span class="messageConsonneVoyelle" id="messageConsonneVoyelle"></span>
+                    </div>
+                </div>
+
+                <div class="input col-12 col-md-12 col-lg-12">
+                    </br>
+                    <label for="motUtilisateur">Proposez un mot</label>
+                    <input type=string id="motUtilisateur">
+                    <button class="envoyer" id="envoyer">Envoyer</button>
+                    <button class="rejouer" id="rejouer">Rejouer</button></br>
+                    <span class="definition" id="definition"></span>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="js/axios/axios.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>
